@@ -7,7 +7,7 @@ if a == 's':
     d = float(input("Qual o valor do DELTA?" ))
     v1 = (-c)/2*b
     v = (-d)/4*b
-    print('Os valores dos vértices são: ', v1, 'e', v)
+    print('Os valores dos vértices são: x do vértice = ', v1, 'e y do vértice = ', v)
 else:
     print('Vamos primeiramente calcular o DELTA')
     e = float(input("Informe o valor do 'a':" ))
