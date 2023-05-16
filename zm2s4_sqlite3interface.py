@@ -6,7 +6,7 @@ conexao = sqlite3.connect('nova_tabela.sqlite3')
 
 while True:
     print('\t ---SISTEMA GERENCIAMENTO DE TAREFAS---') 
-    print('\n 1)Cadastrar Tarefas', '\n 2)Listar Tarefas', '\n 3)Listar tarefas por data', '\n 4) Deletar tarefa', '\n 5) Atualizar Tarefa', '\n 6) Listar categorias', '\n 7) Deletar categoria', '\n 0) Sair') 
+    print('\n 1) Cadastrar Tarefas', '\n 2) Listar Tarefas', '\n 3) Listar tarefas por data', '\n 4) Deletar tarefa', '\n 5) Atualizar Tarefa', '\n 6) Listar categorias', '\n 7) Deletar categoria', '\n 8) Cadastrar categoria', '\n 0) Sair') 
     opcao = int(input("O que você deseja?: "))
     
     if opcao == 0:
@@ -27,6 +27,8 @@ while True:
         listar_categorias(conexao)
     elif opcao == 7:
         deletar_categoria(conexao)
+    elif opcao == 8:
+        cadastrar_categorias(conexao)
     else:
         print("Opção inválida!")
     
