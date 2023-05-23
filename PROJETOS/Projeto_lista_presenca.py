@@ -117,6 +117,7 @@ while True:
     if opcao == 0:
         print('FIM DO PROGRAMA!')
         break
+    
     elif opcao == 1:
         cadastrar_integrantes(conexao)
 
