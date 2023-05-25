@@ -1,21 +1,24 @@
 
 class Cachorros:
-    def __init__(self, nome: str, raca: str, comprimento: float, peso: float):
-        self.nome
-        self.raca
-        self.comprimento
-        self.peso
-    
-    def latir(self):
-        print(f"Au au au!")
+    def __init__(self):
+        self.nome = None
+        self.raca = None
+        self.comprimento = None
+        self.peso = None
+        self.cadastro()
+        self.acao()
 
-    def morder(self):
-        print(f"O cachorro {self.nome} me mordeu!")
+    def cadastro(self):
+        self.nome = input("Qual o nome do seu pet? ")
+        self.raca = input("Qual a raça dele? ")
+        self.comprimento = float(input("Qual o comprimento do seu pet? "))
+        self.peso = float(input("Qual o peso dele? "))
 
-    def comer(self):
-        print(f"Meu nome é {self.nome}, sou da raça {self.raca}, peso {self.peso}, e tenho um comprimento de {self.comprimento}, amo me alimentar!")
+    def acao(self):
+        print(f"Meu nome é {self.nome}. AU AU AU!")
+        print(f"Minha raça é {self.raca}!")
+        print(f"Tenho {self.comprimento:.0f}cm de comprimento!")
+        print(f"Peso {self.peso:.0f}Kg")
 
-atena = Cachorros('Atena', 'Pitbull', 45, 23)
-atena
-
+acoes = Cachorros()
 
