@@ -9,8 +9,8 @@ class Cachorros:
         self.acao()
 
     def cadastro(self):
-        self.nome = input("Qual o nome do seu pet? ")
-        self.raca = input("Qual a raça dele? ")
+        self.nome = input("Qual o nome do seu pet? ").capitalize()
+        self.raca = input("Qual a raça dele? ").capitalize()
         self.comprimento = float(input("Qual o comprimento do seu pet? "))
         self.peso = float(input("Qual o peso dele? "))
 
