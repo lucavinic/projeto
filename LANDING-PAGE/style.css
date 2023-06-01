@@ -2,6 +2,7 @@
     font-family: sans-serif;
     box-sizing: border-box;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -132,10 +133,22 @@ footer a {
     max-width: 60%;
 }
 
+#employees-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#employees-container {
+    margin: 2rem 0;
+    color: #374058;
+}
+
 #employees {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 2rem;
 }
 
 #employees > article {
