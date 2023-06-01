@@ -153,3 +153,7 @@ footer a {
     width: 5rem;
     clip-path: circle();
 }
+
+#about > img {
+    width: 20%;
+}
