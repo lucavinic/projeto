@@ -10,21 +10,349 @@
 </head>
 <body>
     <header>
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Add font awesome icons to buttons  -->
+
+<button class="btn"><i class="fa fa-home"></i></button>
         <nav>
             <h1>Loja do Lucas</h1></a>
             <ul>
-                <a href="#account"><li>Login</li></a>
-                <a href="#equipment"><li>Equipamentos</li></a>
+              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<button class="btn">Produtos</button>
+<div class="dropdown">
+  <button class="btn" style="border-left:1px solid navy">
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content">
+    <a href="#karate">Karate-Gi</a>
+    <a href="#protetor">Protetores</a>
+    <a href="#belt">Faixas</a>
+    <a href="#shirt">Camisetas</a>
+  </div>
+</div>
+
+              <!-- Button to open the modal login form -->
+<button onclick="document.getElementById('id01').style.display='block'">Login</button>
+<!-- The Modal -->
+<div id="id02" class="modal1">
+<span onclick="document.getElementById('id02').style.display='none'"
+class="close1" title="Close Modal">&times;</span>
+
+<!-- Modal Content -->
+<form class="modal-content1 animate1" action="/action_page.php">
+  <div class="imgcontainer">
+    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+<div class="container" style="background-color:#f1f1f1">
+<button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+<span class="psw">Forgot <a href="#">password?</a></span>
+</div>
+</form>
+</div> 
+              <!-- Button to open the modal -->
+<button onclick="document.getElementById('id01').style.display='block'">Criar Conta</button>
+
+<!-- The Modal (contains the Sign Up form) -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">Fechar</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Criar Conta</h1>
+      <p>Por favor, preencha este formulário para criar uma conta.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Insira o Email" name="email" required>
+
+      <label for="psw"><b>Senha</b></label>
+      <input type="password" placeholder="Crie a sua senha" name="psw" required>
+
+      <label for="psw-repeat"><b>Repita a senha</b></label>
+      <input type="password" placeholder="Digite novamente a senha" name="psw-repeat" required>
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Lembre-se de mim
+      </label>
+
+      <p>Ao criar uma conta, você concorda com nossos <a href="#" style="color:dodgerblue">Termos e Privacidade</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+        <button type="submit" class="signup">Criar Conta</button>
+      </div>
+    </div>
+  </form>
+</div> 
+
             </ul>
         </nav>
+<main>
+  <section id="karate">
         <nav id="ajuste">
         <h4>Karate-Gi</h4>
         </nav>
+        <div class="header">
+          <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+          </div>
+        </div>
+        
+<script>window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
+       
         <nav id="ajuste2">
-        <h2>Kimono Onyx Oxygen</h2>
-        <img src="" alt="">
+            <div class="container">
+              <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 5</div>
+                    <img src="./assets/img/Onyx-Oxygen descrição.webp" style="width:40%">
+                    <h5>Arawaza Brasil tem o orgulho de apresentar o mais recente kimono para kumite ONYX OXYGEM,
+                    leve como uma pena! Onyx Oxygen é nosso kimono de kumite mais técnico e inovador já feito.
+                    Este uniforme avançado e de última geração oferece um design moderno, elegante, eficiente e confortável.
+                    É extremamente leve, resistente e oferece o melhor desempenho em competições de alto nível e treinamentos intensos.
+                    Ao mesmo tempo que oferece uma aparência luxuosa e respirabilidade máxima, não gruda no copor quando suado, não encolhe, não enruga e seca muito rápido.</h5>
+                  </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 5</div>
+                    <img src="./assets/img/Onyx-Oxygen hd azul33.webp" style="width:50%">
+                    <buttonr id="1" class="btn">Adicionar ao Carrinho</buttonr>
+                    <h5>Onyx Oxygen Blue</h5>
+                  </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 5</div>
+                    <img src="./assets/img/oxygen_vermelho.webp" style="width:50%">
+                    <buttonr id="1" class="btn">Adicionar ao Carrinho</buttonr>
+                    <h5>Onyx Oxygen Red</h5>
+                  </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">4 / 5</div>
+                  <img src="./assets/img/Onyx-Oxygen hd azul.webp" style="width:50%">
+                  <buttonr id="1" class="btn">Adicionar ao Carrinho</buttonr>
+                  <h5>Onyx Oxygen Blue</h5>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 5</div>
+                    <img src="./assets/img/Onyx-Oxygen2 hd vermelho.webp" style="width:50%">
+                    <buttonr class="btn">Adicionar ao Carrinho</buttonr>
+                    <h5>Onyx Oxygen Red</h5>
+                  </div>
+                </section>
+                <section id="protetor">
+                  <h4>Protetores</h4>
+                  <div class="containerr">
+
+                    <!-- Full-width images with number text -->
+                    <div class="meuSlide">
+                      <div class="numbertext">1 / 3</div>
+                        <img src="./assets/img/kit_wkf_protetores_completos.webp" style="width:100%">
+                        <buttonr class="btn">Adicionar ao Carrinho</buttonr>
+                        <h5>Kit Protetor Pé/Canela/Luva</h5>
+                    </div>
+                  
+                    <div class="meuSlide">
+                      <div class="numbertext">2 / 3</div>
+                        <img src="./assets/img/buacal.webp" style="width:100%">
+                        <buttonr class="btn">Adicionar ao Carrinho</buttonr>
+                        <h5>Protetor Bucal </h5>
+                    </div>
+                  
+                    <div class="meuSlide">
+                      <div class="numbertext">3 / 3</div>
+                        <img src="./assets/img/torax_WKF.webp" style="width:100%">
+                        <buttonr class="btn">Adicionar ao Carrinho</buttonr>
+                    </div>
+                     <!-- Next and previous buttons -->
+  <a class="prevv" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="nextt" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="captionn-container">
+    <p id="captionn"></p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="roww">
+    <div class="columnn">
+      <img class="demoo cursorr" src="./assets/img/kit_wkf_protetores_completos.webp" style="width:100%" onclick="currentSlide(1)" alt="KIT COMPLETO">
+    </div>
+    <div class="columnn">
+      <img class="demoo cursorr" src="./assets/img/buacal.webp" style="width:100%" onclick="currentSlide(2)" alt="Protetor Bucal">
+    </div>
+    <div class="columnn">
+      <img class="demoo cursorr" src="./assets/img/torax_WKF.webp" style="width:100%" onclick="currentSlide(3)" alt="TÓRAX">
+    </div>
+</div>
+                  
+                </section>
+        </main>
+          
+  
+
+            </div>
+                <!-- Next and previous buttons -->
+                <a class="prevv" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="nextt" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <br>
+              
+              <!-- The dots/circles -->
+              <div style="text-align:center">
+                <span class="dott" onclick="currentSlide(1)"></span>
+                <span class="dott" onclick="currentSlide(2)"></span>
+                <span class="dott" onclick="currentSlide(3)"></span>
+              </div>
+              <section id="belt">
+                <h4>Faixas</h4>
+                <div class="recipiente">
+
+                  <!-- Full-width images with number text -->
+                  <div class="Slide">
+                    <div class="numbertext">1 / 3</div>
+                      <img src="./assets/img/faixa_kumite_wkf-.webp" style="width:30%">
+                      <buttonr class="btn">Adicionar ao Carrinho</buttonr>
+                      <h5>Faixa Kumitê WKF</h5>
+                  </div>
+                
+                  <div class="Slide">
+                    <div class="numbertext">2 / 3</div>
+                      <img src="./assets/img/faixa_kata_JAP_WKF.webp" style="width:30%">
+                      <buttonr class="btn">Adicionar ao Carrinho</buttonr>
+                      <h5>Faixa Kata Japonesa</h5>
+                  </div>
+                
+                  <div class="Slide">
+                    <div class="numbertext">3 / 3</div>
+                      <img src="./assets/img/faixa_kata_cetim_wkf.webp" style="width:30%">
+                      <buttonr class="btn">Adicionar ao Carrinho</buttonr>
+                      <h5>Faixa Kata Cetim</h5>
+                  </div>
+                  <!-- Next and previous buttons -->
+  <a class="prevvv" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="nexttt" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="captionnn-container">
+    <p id="captionnn"></p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="rowww">
+    <div class="columnnn">
+      <img class="demooo cursorrr" src="./assets/img/faixa_kumite_wkf-.webp" style="width:30%" onclick="currentSlide(1)" alt="KIT COMPLETO">
+    </div>
+    <div class="columnn">
+      <img class="demooo cursorrr" src="./assets/img/faixa_kata_JAP_WKF.webp" style="width:30%" onclick="currentSlide(2)" alt="Protetor Bucal">
+    </div>
+    <div class="columnn">
+      <img class="demooo cursorrr" src="./assets/img/faixa_kata_cetim_wkf.webp" style="width:30%" onclick="currentSlide(3)" alt="TÓRAX">
+    </div>
+</div>
+                  
+                </section>
+        </main>
+          
+  
+
+            </div>
+                <!-- Next and previous buttons -->
+                <a class="prevvv" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="nexttt" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <br>
+              
+              <!-- The dots/circles -->
+              <div style="text-align:center">
+                <span class="dottt" onclick="currentSlide(1)"></span>
+                <span class="dottt" onclick="currentSlide(2)"></span>
+                <span class="dottt" onclick="currentSlide(3)"></span>
+              </div>
+<script>
+              let slide = 1;
+showSlides(slide);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slide += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slide = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slide = 1}
+  if (n < 1) {slide = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slide-1].style.display = "block";
+  dots[slide-1].className += " active";
+  captionText.innerHTML = dots[slide-1].alt;
+}
+</script>
         </nav>
-    </header>
+        
+   
+<script>
+        let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+
+</script>
+
+</header>
+<footer>
+
+</footer>
   
 </body>
 </html>
