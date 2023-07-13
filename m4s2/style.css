@@ -691,3 +691,164 @@ hr {
 .demoo:hover {
   opacity: 1;
 }
+
+
+
+
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 60%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ /* .responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}*/
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+
+
+.first {
+  position: relative;
+  width: 25%;
+}
+
+.imagem {
+  display: block;
+  width: 50%;
+  height: auto;
+}
+
+.tenta {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 30%;
+  height:0;
+  transition: .5s ease;
+}
+
+.first:hover .tenta {
+  bottom: 0;
+  height: 100%;
+}
+
+
+
+
+
+
+* {box-sizing: border-box}
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.first {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+
+/* Make the image to responsive */
+.imagem {
+  display: block;
+  width: 70%;
+  height: auto;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.tenta {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 70%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 16px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.first:hover .tenta {
+  opacity: 1;
+}
+
+
+
+.columnnn {
+  float: left;
+  width: 100%;
+  padding: 2px;
+}
+
+/* Clear floats after image containers */
+.rowww:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.rowww {
+  display: flex;
+}
+
+.columnnn {
+  flex: 100%;
+  padding: 5px;
+}
+
+.butaofaixa {
+  background-color: black;
+  color: white;
+  padding: 10px 14px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 70%;
+  opacity: 0.9;
+  }
