@@ -142,25 +142,25 @@ function myFunction() {
 
                 <div class="mySlides fade">
                     <img src="./assets/img/Onyx-Oxygen hd azul33.webp" style="width:50%">
-                    <buttonr id="1" class="btn">Adicionar ao Carrinho</buttonr>
+                    <buttonr onclick = "carrinho()" id="1" class="btn">Adicionar ao Carrinho</buttonr>
                     <h5>Onyx Oxygen Blue</h5>
                   </div>
 
                 <div class="mySlides fade">
                     <img src="./assets/img/oxygen_vermelho.webp" style="width:50%">
-                    <buttonr id="1" class="btn">Adicionar ao Carrinho</buttonr>
+                    <buttonr onclick="carrinho()" id="1" class="btn">Adicionar ao Carrinho</buttonr>
                     <h5>Onyx Oxygen Red</h5>
                   </div>
 
                 <div class="mySlides fade">
                   <img src="./assets/img/Onyx-Oxygen hd azul.webp" style="width:50%">
-                  <buttonr id="1" class="btn">Adicionar ao Carrinho</buttonr>
+                  <buttonr onclick="carrinho()" id="1" class="btn">Adicionar ao Carrinho</buttonr>
                   <h5>Onyx Oxygen Blue</h5>
                 </div>
 
                 <div class="mySlides fade">
                     <img src="./assets/img/Onyx-Oxygen2 hd vermelho.webp" style="width:50%">
-                    <buttonr class="btn">Adicionar ao Carrinho</buttonr>
+                    <buttonr onclick="carrinho()" class="btn">Adicionar ao Carrinho</buttonr>
                     <h5>Onyx Oxygen Red</h5>
                   </div>
                 </section>
@@ -308,6 +308,12 @@ function showSlides() {
   setTimeout(showSlides, 3000); // Change image every 3 seconds
 }
 
+
+</script>
+<script>
+  function carrinho(){
+    alert("O produto está em falta")
+  }
 </script>
 
 </header>
