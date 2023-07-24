@@ -1,0 +1,29 @@
+body{
+    background-color: #E7D384;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+img{
+    width: 297px;
+    height: 230px;
+}
+h5{
+    padding-left: 20rem;
+}
+h3{
+    padding-left: 25rem;
+}
+#capu {
+    width: 297px;
+    height: 230px;
+}
+.vl {
+    border-left: 2px solid rgb(16, 16, 16);
+    height: 950px;
+    position: absolute;
+    left: 28%;
+    margin-left: -1px;
+    top: 10;
+  }
