@@ -13,14 +13,14 @@ h5{
     padding-left: 20rem;
 }
 h3{
-    padding-left: 25rem;
+    padding-left: 20rem;
 }
 #capu {
     width: 297px;
     height: 230px;
 }
 .vl {
-    border-left: 2px solid rgb(16, 16, 16);
+    border-left: 2px solid #621d04;
     height: 950px;
     position: absolute;
     left: 28%;
