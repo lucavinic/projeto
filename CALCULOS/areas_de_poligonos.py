@@ -36,5 +36,3 @@ while True:
     else:
         print('o valor informado é inválido, por favor, informe o polígono corretamente')
         print('Triângulo', 'Quadrado', 'Retângulo', 'Paralelogramo', 'Trapézio')
-
-
