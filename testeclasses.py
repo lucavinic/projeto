@@ -17,8 +17,8 @@ class Cachorros:
     def acao(self):
         print(f"Meu nome é {self.nome}. AU AU AU!")
         print(f"Minha raça é {self.raca}!")
-        print(f"Tenho {self.comprimento:.0f}cm de comprimento!")
-        print(f"Peso {self.peso:.0f}Kg")
+        print(f"Tenho {self.comprimento:.2f}cm de comprimento!")
+        print(f"Peso {self.peso:.2f}Kg")
 
 acoes = Cachorros()
 
