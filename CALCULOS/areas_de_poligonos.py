@@ -35,4 +35,5 @@ while True:
     
     else:
         print('o valor informado é inválido, por favor, informe o polígono corretamente')
-        print('Triângulo', 'Quadrado', 'Retângulo', 'Paralelogramo', 'Trapézio')
+        print('triângulo', 'quadrado', 'retângulo', 'paralelogramo', 'trapézio')
+        a = input('informe qual polígono deseja calcular a área: ')

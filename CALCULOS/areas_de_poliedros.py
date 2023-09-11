@@ -36,4 +36,4 @@ while True:
     else:
         print('o valor informado é inválido, por favor, informe o polígono corretamente')
         print('cubo, prisma, pirâmide, esfera, cilindro')
-        break
+        a = input('informe qual poliedro deseja calcular a área: ')
