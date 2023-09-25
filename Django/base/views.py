@@ -21,3 +21,6 @@ def inicio(request):
     }
     resposta = render(request, 'inicio.html', contexto)
     return resposta
+
+def contato(request):
+    return render (request, "contato.html")
