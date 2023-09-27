@@ -1,3 +1,4 @@
+
 import pyautogui
 import time
 link = "https://dlp.hashtagtreinamentos.com/python/intensivao/login"
@@ -25,7 +26,7 @@ time.sleep(3)
 
 
 import pandas as pd
-tabela = pd.read_csv("c:/Users/Lucas/atividades/Jornada Python/produtos.csv")
+tabela = pd.read_csv("c:/Users/Lucas/atividades/Automação Python/produtos.csv")
 print(tabela)
 
 time.sleep(3)
