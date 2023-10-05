@@ -21,4 +21,5 @@ while True:
             calculo_aceleracao = velo_final/tempo - velo_inicial
             print(f"A aceleração é: {calculo_aceleracao:.2f} m/s^2")
             break
-    elif 
+    else: 
+        break
