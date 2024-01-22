@@ -10,8 +10,8 @@ py.PAUSE = 0.3
 py.press("win")
 py.write("chrome")
 py.press("enter")
-time.sleep(1)
-py.click(x=742, y=623, clicks=2)
+time.sleep(2)
+py.click(x=756, y=600, clicks=2)
 py.write(link)
 py.press("enter")
 time.sleep(4)
@@ -26,13 +26,13 @@ time.sleep(3)
 
 
 import pandas as pd
-tabela = pd.read_csv("c:/Users/Lucas/atividades/Automação Python/produtos.csv")
+tabela = pd.read_csv("C:/Users/Lucas/projeto/Automação Python/produtos.csv")
 print(tabela)
 
 time.sleep(3)
 
 for linha in tabela.index:
-    py.click(x=756, y=300)
+    py.click(x=778, y=303)
     codigo = tabela.loc[linha, "codigo"]
     marca = tabela.loc[linha, "marca"]
     tipo = tabela.loc[linha, "tipo"]
