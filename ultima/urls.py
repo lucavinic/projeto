@@ -1,5 +1,5 @@
 """
-URL configuration for myschool project.
+URL configuration for ultima project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.0/topics/http/urls/
@@ -16,21 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from base.views import inicio
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-]
-from django.urls import path
-from . import views
-
-urlpatterns = [
-    path('register/', views.register_aluno, name='register_aluno'),
-]
-
-from django.contrib import admin
-from django.urls import include, path
-
-urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('alunos/', include('alunos.urls')),
+    path('', inicio),
 ]
