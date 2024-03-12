@@ -17,6 +17,8 @@ navegador.maximize_window()
 # Navegue até o site
 navegador.get('https://apps.fas.usda.gov/psdonline/app/index.html#/app/advQuery')
 
+
+#Funções clicáveis
 def selecionar_commodity(navegador, commodity_index):
     # Espera até que o elemento <select> seja carregado e visível
     elemento_select = WebDriverWait(navegador, 20).until(
